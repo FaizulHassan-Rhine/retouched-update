@@ -149,19 +149,21 @@ const Navbar = () => {
                                                     {/* <i className="fa-solid fa-chevron-down text-xs"></i> */}
                                                 </HashLink>
                                          
-                                            {/* {isDropdownOpen && (
-                                            <ul className="absolute z-10  lg:right-0 mt-2  my-4 py-4 lg:py-0 w-full  bg-white rounded-md ">
-                                                <li className="px-3 py-1 text-xs my-1 bg-gray-200 hover:bg-gray-100">
-                                                    <Link to=''>Option 1</Link>
-                                                </li>
-                                                <li className="px-3 text-xs py-1 bg-gray-200 hover:bg-gray-100">
-                                                    <Link to=''>Option 2</Link>
-                                                </li>
-
-                                            </ul>
-                                        )} */}
+                                         
                                         </div>
                                     </li>
+
+                                    <li className="text-black font-semibold hover:text-orange-400">
+                                        <HashLink
+                                            to="/#price"
+                                            onClick={() => handleLinkClick("price")}
+                                            className={` ${activeLink === "price" ? "text-orange-400" : ""
+                                                }`}
+                                        >
+                                            Pricing
+                                        </HashLink>
+                                    </li>
+                                    <li></li>
                                     {getUserInfo.status_code === 200 &&
                                     <li className="text-black font-semibold hover:text-orange-400">
                                         <Link

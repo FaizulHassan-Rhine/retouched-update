@@ -9,6 +9,7 @@ import { FileContextManager, OrderContextManager } from "../App";
 import PopupMessage from "../components/PopUp/PopupMessage";
 import HiddenUploadFile from "../components/FileUploadPage/HiddenUploadFile";
 import HowToUse from "../components/HowToUse/HowToUse";
+import Pricing from "../components/Pricing/Pricing";
 
 
 // const Illustration = lazy(() => import("../IllustrationPart/IllustrationPart"));
@@ -144,6 +145,7 @@ const HomePage = () => {
             >
             <HomeContainer/>
             <HowToUse/>
+            <Pricing/>
                
              <HiddenUploadFile/>
            
